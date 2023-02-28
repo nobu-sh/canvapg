@@ -1,0 +1,72 @@
+.SideBar {
+  position: relative;
+  height: 100%;
+  flex-shrink: 0;
+  overflow: hidden;
+  .SideBarContent {
+    height: 100%;
+    width: calc(100% - 4px);
+    background-color: #292929;
+    // padding: 8px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .DragArea {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4px;
+    height: 100%;
+    cursor: e-resize;
+    &:hover {
+      background-color: #454545;
+    }
+  }
+
+  &.Resizing .DragArea {
+    background-color: #454545;
+  }
+}
+
+section.CustomList {
+  width: 100%;
+  padding: 16px 16px 8px 16px;
+
+  &:last-child {
+    padding: 16px 16px 16px 16px;
+  }
+
+
+  h5.Title {
+    color: #c6c6c6;
+    margin-bottom: 8px;
+  }
+
+  ul {
+    list-style-type: none;
+    margin-left: 10px;
+    li {
+      font-size: 14px;
+      line-height: 18px;
+      font-family: 'Inter';
+      font-weight: 300;
+      color: #acacac;
+
+      margin-bottom: 6px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &:before {
+        content: '-';
+        margin-left: -10px;
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+.Inline {
+  background-color: #1d1d1d;
+  padding: 2px 4px;
+  border-radius: 4px;
+}

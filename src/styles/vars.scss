@@ -1,0 +1,19 @@
+@import './breakpoints.scss';
+
+// Shades
+:root {
+  --white: #ffffff;
+  --black: #000000;
+}
+
+// Background
+:root {
+  --background-primary: #1E1E1E;
+  --scrollbar: rgba(121, 121, 121, 0.4);
+}
+
+// Text
+:root {
+  --text-primary: #fff;
+  --text-secondary: #dcdcdc;
+}

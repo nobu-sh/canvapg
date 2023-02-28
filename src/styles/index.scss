@@ -1,0 +1,198 @@
+@import './fonts.scss';
+@import './vars.scss';
+@import './breakpoints.scss';
+
+html {
+  // overflow-x: hidden;
+  background-color: var(--background-primary);
+  color: var(--text-primary);
+  text-rendering: optimizeLegibility;
+}
+html[scroll-disabled='true'] {
+  overflow: hidden;
+}
+html[scroll-disabled='false'] {
+  overflow: unset;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar) transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: var(--scrollbar);
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  // overflow-x;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+// Style Guides
+
+h1.Large {
+  font-size: 52px;
+  line-height: 56px;
+  letter-spacing: -2%;
+  font-family: 'Inter';
+  font-weight: 600;
+  @include sm {
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -2%;
+    font-family: 'Inter';
+    font-weight: 600;
+  }
+}
+h1.Small {
+  font-size: 44px;
+  line-height: 48px;
+  letter-spacing: -2%;
+  font-family: 'Inter';
+  font-weight: 600;
+  @include sm {
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -2%;
+    font-family: 'Inter';
+    font-weight: 600;
+  }
+}
+h1 {
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -2%;
+  font-family: 'Inter';
+  font-weight: 600;
+  @include sm {
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -2%;
+    font-family: 'Inter';
+    font-weight: 600;
+  }
+}
+h2 {
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: -2%;
+  font-family: 'Inter';
+  font-weight: 600;
+  @include sm {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -2%;
+    font-family: 'Inter';
+    font-weight: 600;
+  }
+}
+h3 {
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -2%;
+  font-family: 'Inter';
+  font-weight: 600;
+  @include sm {
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -2%;
+    font-family: 'Inter';
+    font-weight: 600;
+  }
+}
+h4 {
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: -2%;
+  font-family: 'Inter';
+  font-weight: 600;
+  @include sm {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: unset;
+    font-family: 'Inter';
+    font-weight: 600;
+  }
+}
+h5 {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -2%;
+  font-family: 'Inter';
+  font-weight: 600;
+  @include sm {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: unset;
+    font-family: 'Inter';
+    font-weight: 600;
+  }
+}
+h6 {
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -2%;
+  font-family: 'Inter';
+  font-weight: 600;
+  @include sm {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: unset;
+    font-family: 'Inter';
+    font-weight: 600;
+  }
+}
+
+p.Large {
+  font-size: 18px;
+  line-height: 28px;
+  font-family: 'Inter';
+  font-weight: 400;
+}
+p {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'Inter';
+  font-weight: 400;
+}
+p.Small {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: 'Inter';
+  font-weight: 400;
+}
+p.ExtraSmall {
+  font-size: 12px;
+  line-height: 20px;
+  font-family: 'Inter';
+  font-weight: 400;
+}
