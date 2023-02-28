@@ -5,7 +5,9 @@ random keys. Canvaspg is a tiny project that displays render changes in real-tim
 for canvas 2d contexts. I frequently need to construct these for Discord bots,
 however, it takes a long time when there is no real-time preview.
 
+## Current State
 The code for this project is a bit messy at the moment, I am still composing my ideas.
+and not all functionality yet available.
 
 Public Deployment: https://canvas.nobu.sh/
 
